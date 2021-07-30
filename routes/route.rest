@@ -1,0 +1,15 @@
+GET http://localhost:3001/cardVault
+
+###
+
+Get http://localhost:3001/cardVault/17
+
+###
+
+POST http://localhost:3001/cardVault
+Content-Type: application/json
+
+{
+  "name": "sorren",
+  "color": "black"
+}
