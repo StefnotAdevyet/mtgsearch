@@ -11,4 +11,4 @@ const cardVaultSchema = new mongoose.Schema({
   }
 })
 
-module.exports = mongoose.model('cardVault', cardVaultSchema)
+module.exports = mongoose.model('CardVault', cardVaultSchema)

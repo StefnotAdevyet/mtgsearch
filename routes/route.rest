@@ -2,7 +2,7 @@ GET http://localhost:3001/cardVault
 
 ###
 
-Get http://localhost:3001/cardVault/17
+Get http://localhost:3001/cardVault/61048488839c1debd0b8654
 
 ###
 
@@ -13,3 +13,11 @@ Content-Type: application/json
   "name": "sorren",
   "color": "black"
 }
+
+###
+
+DELETE http://localhost:3001/cardVault/
+
+
+###
+PATCH http://localhost:3001/cardVault/
