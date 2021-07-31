@@ -2,7 +2,7 @@ GET http://localhost:3001/cardVault
 
 ###
 
-Get http://localhost:3001/cardVault/61048488839c1debd0b8654
+Get http://localhost:3001/cardVault
 
 ###
 
@@ -16,8 +16,15 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3001/cardVault/
+DELETE http://localhost:3001/cardVault/610590d00f4c4b2c4e8b966b
 
 
 ###
-PATCH http://localhost:3001/cardVault/
+PATCH http://localhost:3001/cardVault/610599855d1a5b28163288b1
+Content-Type: application/json
+
+{
+  "name": "test",
+  "color": "blue"
+
+}

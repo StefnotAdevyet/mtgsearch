@@ -31,12 +31,19 @@ router.post('/', async (req, res) => {
 
 })
 //update one
-router.patch('/:id', (req, res) => {
+router.patch('/:id', getCard, async (req, res) => {
   if (req.body.name !== null) {
     res.selected.name = req.body.name
   }
   if (req.body.color !== null) {
     res.selected.color = req.body.color
+  }
+
+  try {
+    const updatedCard = await res.selected.save()
+    res.json(updatedCard)
+  } catch (err) {
+    res.status(400).json({ message: err.message })
   }
 
 })
